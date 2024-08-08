@@ -12,7 +12,7 @@
 //     });
 // };
 
-async function readWeatherReport() {
+async function readWeatherReport(city) {
   const response = await fetch(
     `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?key=WNL4XSRW6RREQXLUGP6FJDDWE&contentType=json`,
     { mode: "cors" }

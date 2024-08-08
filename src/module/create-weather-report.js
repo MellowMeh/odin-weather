@@ -1,4 +1,4 @@
-function weatherReportConstructor (weatherData){
+function weatherReportConstructor(weatherData) {
   const weatherReport = {
     title: weatherData.resolvedAddress,
     currentFeelsLike: weatherData.currentConditions.feelslike,
@@ -27,7 +27,7 @@ function weatherReportConstructor (weatherData){
     daySevenMinimumTemperature: weatherData.days[6].tempmin,
     daySevenConditionsIcon: weatherData.days[6].icon,
   };
-  return {...weatherReport};
+  return { ...weatherReport };
 }
 
 export { weatherReportConstructor };
