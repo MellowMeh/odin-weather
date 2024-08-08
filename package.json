@@ -1,5 +1,5 @@
 {
-  "name": "odin-to-do-list",
+  "name": "odin-weather",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -19,5 +19,6 @@
   },
   "dependencies": {
     "date-fns": "^3.6.0"
-  }
+  },
+  "main": "webpack.config.js"
 }
