@@ -162,3 +162,17 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* Webpage specific styling*/
+header {
+  font-size: 35px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+
+.theme-selector-container {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
