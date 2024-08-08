@@ -165,11 +165,18 @@ input:checked + .slider:before {
 
 /* Webpage specific styling*/
 header {
-  font-size: 35px;
   text-transform: capitalize;
   text-align: center;
+  height: 5svh;
+  background-color: var(--color-nav-bg);
+  border-radius: 10px;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 92svh;
+}
 
 .theme-selector-container {
   position: absolute;
