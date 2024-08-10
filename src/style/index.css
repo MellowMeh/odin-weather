@@ -78,7 +78,9 @@ input:focus {
 body {
   background-color: var(--color-base-bg);
   color: var(--color-base-text);
-  padding: 10px;
+  width: 100svw;
+  height: 100svh;
+  overflow: hidden;
 }
 
 .theme-name::after {
@@ -176,6 +178,59 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 92svh;
+}
+
+.left-container,
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.state-initials {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.left-content,
+.right-content {
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+nav {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+}
+
+.active,
+.inactive {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.active {
+  background-color: var(--color-selected);
+  border-right: 2px solid var(--color-base-bg);
+}
+
+.inactive {
+  background-color: var(--color-nav-bg);
+  border-left: 2px solid var(--color-base-bg);
 }
 
 .theme-selector-container {
