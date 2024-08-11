@@ -7,9 +7,11 @@ import {
 } from "./update-weather-report";
 
 async function displayDaily(cityOne, cityTwo) {
-  const firstCity = await updateWeatherReport(cityOne);
-  const secondCity = await updateWeatherReport(cityTwo);
-  const log = await console.log(weatherReportArray);
+  if (weatherReportArray.length === 0) {
+    const firstCity = await updateWeatherReport(cityOne);
+    const secondCity = await updateWeatherReport(cityTwo);
+    const log = await console.log(weatherReportArray);
+  }
 
   const conditionsOne = await generateWeatherWidget(
     "",
