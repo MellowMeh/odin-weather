@@ -1,4 +1,4 @@
-import { leftContainer, rightContainer } from "./dom-query";
+import { dailyButton, leftContainer, rightContainer } from "./dom-query";
 
 let generateWeatherWidget = (svg, label, dataOne, dataTwo) => {
   let weatherDetailsContainer = document.createElement("div");
@@ -27,10 +27,18 @@ let generateWeatherWidget = (svg, label, dataOne, dataTwo) => {
   weatherDetails.appendChild(weatherDetailsInfo);
   weatherDetailsContainer.appendChild(weatherDetails);
 
-  if (leftContainer.children.length < 4) {
-    leftContainer.appendChild(weatherDetailsContainer);
+  if (dailyButton.className === "active") {
+    if (leftContainer.children.length < 4) {
+      leftContainer.appendChild(weatherDetailsContainer);
+    } else {
+      rightContainer.appendChild(weatherDetailsContainer);
+    }
   } else {
-    rightContainer.appendChild(weatherDetailsContainer);
+    if (leftContainer.children.length < 8) {
+      leftContainer.appendChild(weatherDetailsContainer);
+    } else {
+      rightContainer.appendChild(weatherDetailsContainer);
+    }
   }
 };
 
