@@ -31,8 +31,6 @@ let generateWeatherWidget = (condition, label, dataOne, dataTwo) => {
     weatherIcon.src = "../src/image/clear-day.svg";
   } else if (condition === "clear-night") {
     weatherIcon.src = "../src/image/clear-night.svg";
-  } else {
-    console.log("no icon available");
   }
 
   let weatherDetailsInfo = document.createElement("div");
