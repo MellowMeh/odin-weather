@@ -189,9 +189,9 @@ main {
 }
 
 .weather-details-container {
-  margin-top: 10px;
+  margin-top: 20px;
   height: 100%;
-    text-align: center;
+  text-align: center;
 }
 
 .weather-details {
@@ -200,6 +200,7 @@ main {
 }
 
 .weather-details-label {
+  max-inline-size: 10ch;
   text-transform: capitalize;
 }
 

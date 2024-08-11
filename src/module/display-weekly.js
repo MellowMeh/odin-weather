@@ -2,7 +2,7 @@ import { generateWeatherWidget } from "./create-weather-widget";
 import { weatherReportArray } from "./update-weather-report";
 
 async function displayWeekly() {
-  const titleOne = await generateWeatherWidget("", weatherReportArray[0].title);
+  const titleOne = await generateWeatherWidget("", '', weatherReportArray[0].title);
   const dayOneCityOne = await generateWeatherWidget(
     weatherReportArray[0].todayConditionsIcon,
     "today",
@@ -46,7 +46,7 @@ async function displayWeekly() {
     weatherReportArray[0].daySevenMinimumTemperature
   );
 
-  const titleTwo = await generateWeatherWidget("", weatherReportArray[1].title);
+  const titleTwo = await generateWeatherWidget("", '', weatherReportArray[1].title);
   const dayOneCityTwo = await generateWeatherWidget(
     weatherReportArray[1].todayConditionsIcon,
     "today",

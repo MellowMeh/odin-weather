@@ -54,7 +54,7 @@ let generateWeatherWidget = (condition, label, dataOne, dataTwo) => {
   weatherDetailsContainer.appendChild(weatherDetails);
 
   if (dailyButton.className === "active") {
-    if (leftContainer.children.length < 4) {
+    if (leftContainer.children.length < 5) {
       leftContainer.appendChild(weatherDetailsContainer);
     } else {
       rightContainer.appendChild(weatherDetailsContainer);

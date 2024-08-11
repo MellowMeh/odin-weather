@@ -13,10 +13,15 @@ async function displayDaily(cityOne, cityTwo) {
     const log = await console.log(weatherReportArray);
   }
 
+  const titleOne = await generateWeatherWidget(
+    "",
+    "",
+    weatherReportArray[0].title
+  );
+
   const conditionsOne = await generateWeatherWidget(
     weatherReportArray[0].currentConditionsIcon,
-    '',
-    cityOne
+    weatherReportArray[0].currentConditionsIcon
   );
 
   const feelsLikeOne = await generateWeatherWidget(
@@ -37,10 +42,15 @@ async function displayDaily(cityOne, cityTwo) {
     weatherReportArray[0].currentTemperature + "°f"
   );
 
+  const titleTwo = await generateWeatherWidget(
+    "",
+    "",
+    weatherReportArray[1].title
+  );
+
   const conditionsTwo = await generateWeatherWidget(
     weatherReportArray[1].currentConditionsIcon,
-    "",
-    cityTwo
+    weatherReportArray[1].currentConditionsIcon
   );
 
   const feelsLikeTwo = await generateWeatherWidget(
