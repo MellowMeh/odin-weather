@@ -12,6 +12,4 @@ import { generateDaily } from "../module/generate-daily";
 
 themeSlider.addEventListener("click", toggleTheme);
 toggleTheme();
-updateWeatherReport("raleigh");
-updateWeatherReport("orlando");
-generateDaily();
+generateDaily('raleigh', 'orlando');
