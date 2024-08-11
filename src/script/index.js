@@ -12,4 +12,4 @@ import { generateDaily } from "../module/generate-daily";
 
 themeSlider.addEventListener("click", toggleTheme);
 toggleTheme();
-generateDaily('raleigh', 'orlando');
+generateDaily('durham', 'orlando');

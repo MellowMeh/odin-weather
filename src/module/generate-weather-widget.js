@@ -1,4 +1,4 @@
-import { leftContainer } from "./dom-query";
+import { leftContainer, rightContainer } from "./dom-query";
 
 let generateWeatherWidget = (svg, label, dataOne, dataTwo) => {
   let weatherDetailsContainer = document.createElement("div");
@@ -26,7 +26,12 @@ let generateWeatherWidget = (svg, label, dataOne, dataTwo) => {
   weatherDetailsInfo.appendChild(weatherDetailsDataTwo);
   weatherDetails.appendChild(weatherDetailsInfo);
   weatherDetailsContainer.appendChild(weatherDetails);
-  leftContainer.appendChild(weatherDetailsContainer);
+
+  if (leftContainer.children.length < 5) {
+    leftContainer.appendChild(weatherDetailsContainer);
+  } else {
+    rightContainer.appendChild(weatherDetailsContainer);
+  }
 };
 
 export { generateWeatherWidget };
