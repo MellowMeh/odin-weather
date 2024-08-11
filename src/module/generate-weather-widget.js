@@ -27,7 +27,7 @@ let generateWeatherWidget = (svg, label, dataOne, dataTwo) => {
   weatherDetails.appendChild(weatherDetailsInfo);
   weatherDetailsContainer.appendChild(weatherDetails);
 
-  if (leftContainer.children.length < 5) {
+  if (leftContainer.children.length < 4) {
     leftContainer.appendChild(weatherDetailsContainer);
   } else {
     rightContainer.appendChild(weatherDetailsContainer);

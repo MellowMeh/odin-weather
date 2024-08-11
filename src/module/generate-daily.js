@@ -13,7 +13,7 @@ async function generateDaily(cityOne, cityTwo) {
 
   const conditionsOne = await generateWeatherWidget(
     "",
-    "forecast",
+    weatherReportArray[0].title,
     weatherReportArray[0].currentConditionsIcon
   );
 
@@ -37,7 +37,7 @@ async function generateDaily(cityOne, cityTwo) {
 
   const conditionsTwo = await generateWeatherWidget(
     "",
-    "forecast",
+    weatherReportArray[1].title,
     weatherReportArray[1].currentConditionsIcon
   );
 
