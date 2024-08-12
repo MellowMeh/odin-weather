@@ -8,29 +8,29 @@ let generateWeatherWidget = (condition, label, dataOne, dataTwo) => {
 
   let weatherIcon = document.createElement("img");
   if (condition === "feels like") {
-    weatherIcon.src = "../src/image/feels-like.svg";
+    weatherIcon.src = "../src/image/feels-like.SVG";
   } else if (condition === "humidity") {
-    weatherIcon.src = "../src/image/humidity.svg";
+    weatherIcon.src = "../src/image/humidity.SVG";
   } else if (condition === "temperature") {
-    weatherIcon.src = "../src/image/temperature.svg";
+    weatherIcon.src = "../src/image/temperature.SVG";
   } else if (condition === "snow") {
-    weatherIcon.src = "../src/image/snow.svg";
+    weatherIcon.src = "../src/image/snow.SVG";
   } else if (condition === "rain") {
-    weatherIcon.src = "../src/image/rain.svg";
+    weatherIcon.src = "../src/image/rain.SVG";
   } else if (condition === "fog") {
-    weatherIcon.src = "../src/image/fog.svg";
+    weatherIcon.src = "../src/image/fog.SVG";
   } else if (condition === "wind") {
-    weatherIcon.src = "../src/image/wind.svg";
+    weatherIcon.src = "../src/image/wind.SVG";
   } else if (condition === "cloudy") {
-    weatherIcon.src = "../src/image/cloudy.svg";
+    weatherIcon.src = "../src/image/cloudy.SVG";
   } else if (condition === "partly-cloudy-day") {
-    weatherIcon.src = "../src/image/partly-cloudy-day.svg";
+    weatherIcon.src = "../src/image/partly-cloudy-day.SVG";
   } else if (condition === "partly-cloudy-night") {
-    weatherIcon.src = "../src/image/partly-cloudy-night.svg";
+    weatherIcon.src = "../src/image/partly-cloudy-night.SVG";
   } else if (condition === "clear-day") {
-    weatherIcon.src = "../src/image/clear-day.svg";
+    weatherIcon.src = "../src/image/clear-day.SVG";
   } else if (condition === "clear-night") {
-    weatherIcon.src = "../src/image/clear-night.svg";
+    weatherIcon.src = "../src/image/clear-night.SVG";
   }
 
   let weatherDetailsInfo = document.createElement("div");
