@@ -1,6 +1,4 @@
-import { weatherReportConstructor } from "./create-weather-report";
 import { generateWeatherWidget } from "./create-weather-widget";
-import { readWeatherReport } from "./read-weather-report";
 import {
   updateWeatherReport,
   weatherReportArray,

@@ -1,4 +1,3 @@
-import { secondsInDay } from "date-fns/constants";
 import { currentDayOfWeek, fifthDayOfWeek, fourthDayOfWeek, secondDayOfWeek, seventhDayOfWeek, sixthDayOfWeek, thirdDayOfWeek } from "./create-days-of-week";
 import { generateWeatherWidget } from "./create-weather-widget";
 import { weatherReportArray } from "./update-weather-report";
